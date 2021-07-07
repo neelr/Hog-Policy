@@ -23,7 +23,6 @@ function hogGame(i,j) {
     if (j>=100 || (j!== 0 && !j)) return 0
 
     if (rolls[i][j] != null) return rolls[i][j]
-    console.log(`Starting ${i} ${j}`)
     let probabilities = (new Array(9)).fill(0)
     for (let fd = 1; fd <=6; fd++) {
         probabilities[0] += (1/6) * ((1-hogGame(j,i+fd))+more_boar(i+fd,j) + hogGame(i+fd, j))

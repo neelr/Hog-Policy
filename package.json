@@ -1,0 +1,20 @@
+{
+  "name": "hog-policy",
+  "version": "1.0.0",
+  "description": "Value iteration with the game Hog",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neelr/Hog-Policy.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neelr/Hog-Policy/issues"
+  },
+  "homepage": "https://github.com/neelr/Hog-Policy#readme"
+}

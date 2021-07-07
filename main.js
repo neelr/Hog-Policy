@@ -162,6 +162,9 @@ function hogGame(i,j) {
                                     for (let ni = 1; ni <=6; ni++) {
                                         for (let ti = 1; ti <=6; ti++) {
                                             if (ti==1 || fd == 1 || sd == 1 || td == 1 || ftd ==1 || fthd == 1 || std == 1 || svtd == 1 || ei ==1 || ni == 1) {
+                                                if (ti==1 && fd == 1 && sd == 1 && td == 1 && ftd ==1 && fthd == 1 && std == 1 && svtd == 1 && ei ==1 && ni == 1)
+                                                probabilities[9] = (1/60466176) * ((1-hogGame(j,i+1))+more_boar(i+1,j) + hogGame(i+1, j))
+                                                else
                                                 probabilities[9] += (1/60466176) * ((1-hogGame(j,i+1))+more_boar(i+1,j) + hogGame(i+1, j))
                                             } else 
                                                 probabilities[9] += (1/60466176) * ((1-hogGame(j,ti+i+fd+sd+td+ftd+fthd+std+svtd+ei+ni))+more_boar(ti+i+ei+ni+fd+sd+td+ftd+fthd+std+svtd,j) + hogGame(i+fthd+fd+ni+sd+td+ftd+ti+std+svtd+ei, j))
